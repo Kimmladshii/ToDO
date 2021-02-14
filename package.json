@@ -1,0 +1,22 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kimmladshii/ToDO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kimmladshii/ToDO/issues"
+  },
+  "homepage": "https://github.com/Kimmladshii/ToDO#readme",
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  }
+}

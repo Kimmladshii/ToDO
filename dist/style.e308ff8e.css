@@ -1,0 +1,89 @@
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+div,
+p,
+input,
+button,
+form,
+span,
+a,
+ul,
+li {
+  box-sizing: border-box;
+}
+
+ul,
+li,
+button {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 627px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+.container-form {
+  width: 627px;
+  height: 107px;
+  background-color: #f3f3f3;
+  margin-top: 102px;
+}
+
+.form-Ticket {
+  display: flex;
+  padding: 28px 50px;
+}
+
+.input-task {
+  width: 376px;
+  height: 52px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+.btn-task {
+  width: 142px;
+  height: 52px;
+  margin-left: 10px;
+  font-size: 16px;
+  background: #0e7cfd;
+  color: white;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-top: 63px;
+  margin-right: 30px;
+  font-size: 15px;
+}
+
+.notes {
+  background: #f3f3f3;
+  width: 627px;
+  height: 345px;
+  margin-top: 20px;
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
