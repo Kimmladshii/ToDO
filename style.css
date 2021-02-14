@@ -43,7 +43,7 @@ a {
 
 .form-Ticket {
   display: flex;
-  justify-content: center;
+  padding: 28px 50px;
 }
 
 .input-task {
