@@ -118,7 +118,19 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
+var form = document.getElementById('form');
+var tubs = document.getElementById('tubs');
+var notes = document.getElementById('notes');
+var nodesValue = [];
+form.addEventListener('submit', function (event) {
+  event.preventDefault(); // console.log(event);
 
+  var input = form.querySelector('input');
+  console.log(input.value);
+  nodesValue.push(input.value.trim());
+  input.value = '';
+  console.log(nodesValue);
+});
 },{}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
