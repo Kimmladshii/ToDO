@@ -122,14 +122,40 @@ var form = document.getElementById('form');
 var tubs = document.getElementById('tubs');
 var notes = document.getElementById('notes');
 var nodesValue = [];
+/** Create template function for node */
+
+function nodeTemplate(nodeText) {
+  var node = document.createElement('DIV');
+  node.classList.add('note');
+  console.dir(node);
+  var content = "\n    <button type=\"button\" class=\"note-status\">Status</button>\n    <span>".concat(nodeText, "</span>\n    <span class=\"note-actions\">\n        <button type=\"button\" class=\"note-delete\">Delete</button>\n    </span>\n    <hr>\n  ");
+  node.innerHTML = content;
+  return node;
+}
+
+function putToNodes(nodeText) {
+  notes.appendChild(nodeTemplate(nodeText));
+  console.log(notes);
+}
+
 form.addEventListener('submit', function (event) {
   event.preventDefault(); // console.log(event);
 
   var input = form.querySelector('input');
-  console.log(input.value);
-  nodesValue.push(input.value.trim());
-  input.value = '';
+  /** Save values to our array */
+
+  var value = input.value.trim();
+  nodesValue.push(value);
+  putToNodes(value);
   console.log(nodesValue);
+  input.value = '';
+});
+notes.addEventListener('click', function (event) {
+  var target = event.target;
+
+  if (target.nodeName === 'BUTTON') {
+    console.log(event);
+  }
 });
 },{}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
